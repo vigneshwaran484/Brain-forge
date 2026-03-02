@@ -1,5 +1,37 @@
 import { useState } from 'react';
 
+const FormGroup = ({ label, type, name, value, onChange, required, min, max, isTextArea }) => {
+    const [isFocused, setIsFocused] = useState(false);
+    const isFilled = value !== '';
+
+    return (
+        <div className={`form-group ${isFocused ? 'focused' : ''} ${isFilled ? 'filled' : ''}`}>
+            <label>{label}</label>
+            {isTextArea ? (
+                <textarea
+                    name={name}
+                    value={value}
+                    onChange={onChange}
+                    onFocus={() => setIsFocused(true)}
+                    onBlur={() => setIsFocused(false)}
+                    required={required}
+                />
+            ) : (
+                <input
+                    type={type}
+                    name={name}
+                    value={value}
+                    onChange={onChange}
+                    onFocus={() => setIsFocused(true)}
+                    onBlur={() => setIsFocused(false)}
+                    required={required}
+                    min={min}
+                    max={max}
+                />
+            )}
+        </div>
+    );
+};
 export default function Enrollment() {
     const [form, setForm] = useState({ childName: '', age: '', parentName: '', phone: '', email: '', interestLevel: '', message: '' });
     const [submitted, setSubmitted] = useState(false);
@@ -42,23 +74,26 @@ export default function Enrollment() {
                         </div>
                     </div>
                     {submitted ? (
-                        <div className="enroll-form reveal reveal-delay-2" style={{ textAlign: 'center', padding: '60px 40px' }}>
-                            <div style={{ fontSize: '4rem', marginBottom: '16px' }}>🎉</div>
-                            <h3 style={{ color: 'var(--green)', marginBottom: '12px' }}>Assessment Booked!</h3>
-                            <p style={{ color: 'var(--text-muted)' }}>We'll contact you shortly to schedule your child's free assessment.</p>
+                        <div className="enroll-form reveal reveal-delay-2" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', minHeight: '400px' }}>
+                            <div style={{ width: '64px', height: '64px', background: 'rgba(0, 255, 136, 0.1)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '24px' }}>
+                                <span style={{ fontSize: '2rem' }}>✓</span>
+                            </div>
+                            <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.5rem', fontWeight: '700', color: 'var(--text-white)', marginBottom: '12px' }}>Response Successfully Saved</h3>
+                            <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: '1.7', maxWidth: '300px' }}>Our education experts will review your details and contact you via email shortly to schedule your free assessment.</p>
                         </div>
                     ) : (
                         <form className="enroll-form reveal reveal-delay-2" onSubmit={handleSubmit}>
                             <div className="form-row">
-                                <div className="form-group"><label>Child's Name</label><input type="text" name="childName" value={form.childName} onChange={handleChange} required /></div>
-                                <div className="form-group"><label>Age</label><input type="number" name="age" min="5" max="14" value={form.age} onChange={handleChange} required /></div>
+                                <FormGroup label="Child's Name" name="childName" value={form.childName} type="text" onChange={handleChange} required />
+                                <FormGroup label="Age" name="age" value={form.age} type="number" min="5" max="14" onChange={handleChange} required />
                             </div>
                             <div className="form-row">
-                                <div className="form-group"><label>Parent Name</label><input type="text" name="parentName" value={form.parentName} onChange={handleChange} required /></div>
-                                <div className="form-group"><label>Phone</label><input type="tel" name="phone" value={form.phone} onChange={handleChange} required /></div>
+                                <FormGroup label="Parent Name" name="parentName" value={form.parentName} type="text" onChange={handleChange} required />
+                                <FormGroup label="Phone" name="phone" value={form.phone} type="tel" onChange={handleChange} required />
                             </div>
-                            <div className="form-group"><label>Email</label><input type="email" name="email" value={form.email} onChange={handleChange} required /></div>
-                            <div className="form-group"><label>Interest Level</label>
+                            <FormGroup label="Email" name="email" value={form.email} type="email" onChange={handleChange} required />
+                            <div className={`form-group ${form.interestLevel ? 'filled' : ''}`}>
+                                <label>Interest Level</label>
                                 <select name="interestLevel" value={form.interestLevel} onChange={handleChange} required>
                                     <option value=""></option>
                                     <option>Junior Tier (Levels 1-3)</option>
@@ -68,7 +103,7 @@ export default function Enrollment() {
                                     <option>Not sure — Need assessment</option>
                                 </select>
                             </div>
-                            <div className="form-group"><label>Message (Optional)</label><textarea name="message" value={form.message} onChange={handleChange}></textarea></div>
+                            <FormGroup label="Message (Optional)" name="message" value={form.message} isTextArea onChange={handleChange} />
                             <button type="submit" className="btn btn-primary btn-lg magnetic" disabled={loading}>
                                 {loading ? 'Submitting...' : 'Book Free Assessment →'}
                             </button>
