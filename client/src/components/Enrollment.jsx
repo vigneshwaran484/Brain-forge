@@ -46,7 +46,7 @@ const FormGroup = ({ label, type, name, value, onChange, required, min, max, isT
     );
 };
 export default function Enrollment() {
-    const [form, setForm] = useState({ childName: '', age: '', parentName: '', phone: '', email: '', interestLevel: '', message: '' });
+    const [form, setForm] = useState({ childName: '', age: '', parentName: '', phone: '', email: '', password: '', interestLevel: '', message: '' });
     const [submitted, setSubmitted] = useState(false);
     const [loading, setLoading] = useState(false);
 
@@ -61,9 +61,15 @@ export default function Enrollment() {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(form)
             });
-            if (res.ok) setSubmitted(true);
+            if (res.ok) {
+                setSubmitted(true);
+            } else {
+                const data = await res.json();
+                alert(data.errors?.[0]?.msg || data.error || 'Submission failed');
+            }
         } catch (err) {
             console.error('Enrollment error:', err);
+            alert('Network error. Please try again.');
         }
         setLoading(false);
     };
@@ -87,7 +93,7 @@ export default function Enrollment() {
                         </div>
                     </div>
                     {submitted ? (
-                        <div className="enroll-form" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', minHeight: '400px' }}>
+                        <div className="enroll-form reveal reveal-delay-2" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', minHeight: '400px' }}>
                             <div style={{ width: '64px', height: '64px', background: 'rgba(0, 255, 136, 0.1)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '24px' }}>
                                 <span style={{ fontSize: '2rem' }}>✓</span>
                             </div>
@@ -95,7 +101,7 @@ export default function Enrollment() {
                             <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: '1.7', maxWidth: '300px' }}>Our education experts will review your details and contact you via email shortly to schedule your free assessment.</p>
                         </div>
                     ) : (
-                        <form className="enroll-form" onSubmit={handleSubmit}>
+                        <form className="enroll-form reveal reveal-delay-2" onSubmit={handleSubmit}>
                             <div className="form-row">
                                 <FormGroup label="Child's Name" name="childName" value={form.childName} type="text" onChange={handleChange} required />
                                 <FormGroup label="Age" name="age" value={form.age} type="number" min="5" max="14" onChange={handleChange} required />
@@ -106,7 +112,7 @@ export default function Enrollment() {
                             </div>
                             <div className="form-row">
                                 <FormGroup label="Email" name="email" value={form.email} type="email" onChange={handleChange} required />
-                                <FormGroup label="Password" name="password" value={form.password || ''} type="password" onChange={handleChange} required />
+                                <FormGroup label="Account Password" name="password" value={form.password} type="password" onChange={handleChange} required />
                             </div>
                             <FormGroup
                                 label="Interest Level"
