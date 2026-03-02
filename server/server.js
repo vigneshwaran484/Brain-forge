@@ -19,6 +19,11 @@ connectDB();
 // Routes
 app.use('/api', enrollmentRoutes);
 
+// Root route for Render/Deployment
+app.get('/', (req, res) => {
+    res.send('🧠 Brain Forge API is active and running.');
+});
+
 // Health check
 app.get('/api/health', (req, res) => {
     res.json({ status: 'ok', message: 'Brain Forge API is running' });

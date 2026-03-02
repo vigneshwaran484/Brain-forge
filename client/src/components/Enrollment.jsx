@@ -95,15 +95,15 @@ export default function Enrollment() {
                         </div>
                     </div>
                     {submitted ? (
-                        <div className="enroll-form reveal reveal-delay-2" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', minHeight: '400px' }}>
+                        <div className="enroll-form" style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', minHeight: '400px', background: 'rgba(255, 255, 255, 0.03)', border: '1px solid rgba(255, 255, 255, 0.1)', borderRadius: '24px' }}>
                             <div style={{ width: '64px', height: '64px', background: 'rgba(0, 255, 136, 0.1)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', marginBottom: '24px' }}>
-                                <span style={{ fontSize: '2rem' }}>✓</span>
+                                <span style={{ fontSize: '2rem', color: '#00ff88' }}>✓</span>
                             </div>
-                            <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.5rem', fontWeight: '700', color: 'var(--text-white)', marginBottom: '12px' }}>Response Successfully Saved</h3>
-                            <p style={{ color: 'var(--text-muted)', fontSize: '0.95rem', lineHeight: '1.7', maxWidth: '300px' }}>Our education experts will review your details and contact you via email shortly to schedule your free assessment.</p>
+                            <h3 style={{ fontFamily: 'var(--font-heading)', fontSize: '1.75rem', fontWeight: '700', color: 'var(--text-white)', marginBottom: '16px' }}>Response Successfully Saved</h3>
+                            <p style={{ color: 'var(--text-muted)', fontSize: '1rem', lineHeight: '1.7', maxWidth: '360px' }}>Our education experts will review your details and contact you via email shortly to schedule your free assessment.</p>
                         </div>
                     ) : (
-                        <form className="enroll-form reveal reveal-delay-2" onSubmit={handleSubmit}>
+                        <form className="enroll-form" onSubmit={handleSubmit}>
                             <div className="form-row">
                                 <FormGroup label="Child's Name" name="childName" value={form.childName} type="text" onChange={handleChange} required />
                                 <FormGroup label="Age" name="age" value={form.age} type="number" min="5" max="14" onChange={handleChange} required />
