@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brain Forge — Forging Young Minds for Tomorrow</title>
+  <meta name="description"
+    content="Brain Forge is an innovative proficiency-based educational program for children aged 5-14. 12 Mastery Levels, 6 Pillars, 1 Mission — Excellence.">
+  <meta property="og:title" content="Brain Forge — Forging Young Minds for Tomorrow">
+  <meta property="og:description"
+    content="Where Proficiency Defines Progress, Not Age. 12 Levels. 6 Pillars. 1 Mission — Excellence.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><text y='28' font-size='28'>🧠</text></svg>">
+</head>
+
+<body>
+
+  <!-- Cursor -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+  <!-- Scroll Progress -->
+  <div class="scroll-progress" id="scrollProgress"></div>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo">
+        <div class="logo-icon">🧠</div>Brain Forge
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#pillars">Pillars</a><a href="#pathway">Pathway</a><a href="#competition">Competitions</a><a
+          href="#curriculum">Curriculum</a><a href="#faq">FAQ</a>
+      </div>
+      <div class="nav-cta"><a href="#enroll" class="btn btn-primary magnetic">Book Free Assessment</a></div>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="hero">
+    <div class="hero-canvas"><canvas id="particleCanvas"></canvas></div>
+    <div class="hero-bg">
+      <div class="hero-gradient hero-gradient-1"></div>
+      <div class="hero-gradient hero-gradient-2"></div>
+      <div class="hero-gradient hero-gradient-3"></div>
+      <div class="hero-grid"></div>
+      <div class="scanline"></div>
+    </div>
+    <div class="hero-3d"><canvas id="hero3dCanvas"></canvas></div>
+    <div class="container">
+      <div class="hero-content">
+        <div class="hero-badge"><span class="dot"></span> Now Enrolling — Ages 5 to 14</div>
+        <h1>Forging Young Minds<br><span class="highlight gradient-text">for Tomorrow</span></h1>
+        <p class="hero-sub">Where Proficiency Defines Progress, Not Age</p>
+        <p class="hero-tagline">12 Levels · 6 Pillars · 1 Mission — Excellence.</p>
+        <div class="hero-ctas">
+          <a href="#pillars" class="btn btn-primary btn-lg magnetic">Explore Our Program ↓</a>
+          <a href="#enroll" class="btn btn-outline btn-lg magnetic">Book Free Assessment</a>
+        </div>
+        <div class="hero-trust">
+          <div class="trust-badge"><span class="badge-icon">🎓</span> Ages 5–14</div>
+          <div class="trust-badge"><span class="badge-icon">📊</span> 12 Mastery Levels</div>
+          <div class="trust-badge"><span class="badge-icon">🏆</span> Competition Ready</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM / SOLUTION -->
+  <section class="section problem-section" id="problem">
+    <div class="container">
+      <div class="section-header reveal"><span class="section-label">The Challenge</span>
+        <h2 class="section-title">Rethinking Education</h2>
+        <p class="section-subtitle">Traditional models limit potential. Brain Forge unlocks it.</p>
+      </div>
+      <div class="problem-grid">
+        <div class="problem-card reveal">
+          <h3>Traditional Education Has Limitations</h3>
+          <ul class="problem-list">
+            <li><span class="icon">✕</span><span>Age-based progression ignores individual pace</span></li>
+            <li><span class="icon">✕</span><span>Limited focus on critical thinking</span></li>
+            <li><span class="icon">✕</span><span>Fragmented subject learning</span></li>
+            <li><span class="icon">✕</span><span>No competition preparation pathway</span></li>
+          </ul>
+        </div>
+        <div class="solution-card reveal reveal-delay-2">
+          <h3>The Brain Forge Difference</h3>
+          <ul class="solution-list">
+            <li><span class="icon">✓</span><span>Proficiency-based mastery progression</span></li>
+            <li><span class="icon">✓</span><span>HOTS embedded at every level</span></li>
+            <li><span class="icon">✓</span><span>6 integrated learning pillars</span></li>
+            <li><span class="icon">✓</span><span>Built-in competition readiness</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SIX PILLARS - HEXAGONAL -->
+  <section class="section" id="pillars">
+    <div class="container">
+      <div class="section-header reveal"><span class="section-label">Our Foundation</span>
+        <h2 class="section-title">Six Pillars of Holistic Excellence</h2>
+        <p class="section-subtitle">A comprehensive framework designed to develop every dimension of your child's
+          potential.</p>
+      </div>
+      <div class="pillars-wrapper">
+        <div class="pillars-center">🧠</div>
+        <div class="pillars-hex">
+          <div class="pillar-card reveal reveal-delay-1" data-color="blue" data-pillar="math">
+            <div class="pillar-icon">🧮</div>
+            <h3>Foundational Mathematics</h3>
+            <p>Logical reasoning, number sense &amp; problem solving</p>
+          </div>
+          <div class="pillar-card reveal reveal-delay-2" data-color="green" data-pillar="science">
+            <div class="pillar-icon">🔬</div>
+            <h3>Science</h3>
+            <p>Scientific temper, observation &amp; conceptual understanding</p>
+          </div>
+          <div class="pillar-card reveal reveal-delay-3" data-color="purple" data-pillar="english">
+            <div class="pillar-icon">📖</div>
+            <h3>Communicative English</h3>
+            <p>Fluency, comprehension &amp; expressive ability</p>
+          </div>
+          <div class="pillar-card reveal reveal-delay-4" data-color="orange" data-pillar="cyber">
+            <div class="pillar-icon">💻</div>
+            <h3>Cyber Knowledge</h3>
+            <p>Digital literacy &amp; responsible technology use</p>
+          </div>
+          <div class="pillar-card reveal reveal-delay-5" data-color="pink" data-pillar="gk">
+            <div class="pillar-icon">🌍</div>
+            <h3>General Knowledge</h3>
+            <p>Awareness of the world, current affairs &amp; culture</p>
+          </div>
+          <div class="pillar-card reveal reveal-delay-6" data-color="gold" data-pillar="art">
+            <div class="pillar-icon">🎨</div>
+            <h3>Art, Craft &amp; Personality</h3>
+            <p>Creativity, fine motor skills &amp; life skills</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PILLAR MODAL -->
+  <div class="pillar-modal" id="pillarModal">
+    <div class="pillar-modal-content">
+      <button class="pillar-modal-close" id="pillarModalClose">✕</button>
+      <div class="modal-pillar-icon" id="modalIcon"></div>
+      <h3 class="modal-pillar-title" id="modalTitle"></h3>
+      <p class="modal-pillar-desc" id="modalDesc"></p>
+      <div class="modal-topics" id="modalTopics"></div>
+    </div>
+  </div>
+
+  <!-- RPG SKILL TREE PATHWAY -->
+  <section class="section pathway-section" id="pathway">
+    <div class="pathway-bg"></div>
+    <div class="container" style="position:relative;z-index:1">
+      <div class="section-header reveal"><span class="section-label">The Journey</span>
+        <h2 class="section-title">Your Child's Journey to Mastery</h2>
+        <p class="section-subtitle">12 meticulously designed levels across 4 progressive tiers.</p>
+      </div>
+      <div class="rpg-progress reveal">
+        <div class="progress-bar-wrap">
+          <div class="progress-bar-fill" id="rpgProgress"></div>
+        </div>
+        <div class="progress-label"><span id="rpgPercent">0</span>% Journey Unlocked</div>
+      </div>
+      <div class="rpg-tree">
+        <div class="rpg-tier" data-tier="junior">
+          <div class="tier-header"><span class="tier-badge junior">Tier 1 — Junior</span><span
+              class="tier-icon">🌱</span></div>
+          <div class="rpg-nodes">
+            <div class="rpg-node reveal" data-level="1">
+              <div class="level-num">01</div>
+              <h4>Junior</h4>
+              <p>Foundation Building</p>
+              <div class="node-expand">
+                <div class="node-detail">Number sense basics, phonics, simple experiments, digital awareness, world
+                  awareness, basic art skills.</div>
+              </div>
+            </div>
+            <div class="rpg-node reveal reveal-delay-1" data-level="2">
+              <div class="level-num">02</div>
+              <h4>Junior Pro</h4>
+              <p>Deeper Exploration</p>
+              <div class="node-expand">
+                <div class="node-detail">Pattern recognition, reading fluency, plant & animal sciences, coding intro,
+                  India GK, craft projects.</div>
+              </div>
+            </div>
+            <div class="rpg-node reveal reveal-delay-2" data-level="3">
+              <div class="level-num">03</div>
+              <h4>Junior Master</h4>
+              <p>Advanced Foundations</p>
+              <div class="node-expand">
+                <div class="node-detail">Word problems, creative writing, earth sciences, cyber safety, current events,
+                  leadership basics.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tier-checkpoint"><span class="checkpoint-badge"
+            style="background:rgba(0,255,136,0.1);color:var(--green);border:1px solid rgba(0,255,136,0.2)">🎯 Gateway
+            Exam → Senior Tier</span></div>
+        <div class="rpg-tier" data-tier="senior">
+          <div class="tier-header"><span class="tier-badge senior">Tier 2 — Senior</span><span
+              class="tier-icon">🌳</span></div>
+          <div class="rpg-nodes">
+            <div class="rpg-node reveal" data-level="4">
+              <div class="level-num">04</div>
+              <h4>Senior</h4>
+              <p>Knowledge Expansion</p>
+              <div class="node-expand">
+                <div class="node-detail">Fractions & decimals, essay writing, human body, programming basics, world
+                  geography, emotional intelligence.</div>
+              </div>
+            </div>
+            <div class="rpg-node reveal reveal-delay-1" data-level="5">
+              <div class="level-num">05</div>
+              <h4>Senior Pro</h4>
+              <p>Complex Connections</p>
+              <div class="node-expand">
+                <div class="node-detail">Pre-algebra, debate skills, force & energy, algorithms, history deep-dives,
+                  team leadership.</div>
+              </div>
+            </div>
+            <div class="rpg-node reveal reveal-delay-2" data-level="6">
+              <div class="level-num">06</div>
+              <h4>Senior Master</h4>
+              <p>Independent Thinking</p>
+              <div class="node-expand">
+                <div class="node-detail">Statistics, comprehension mastery, chemical reactions, AI basics, current
+                  affairs, public speaking.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tier-checkpoint"><span class="checkpoint-badge"
+            style="background:rgba(168,85,247,0.1);color:var(--purple);border:1px solid rgba(168,85,247,0.2)">🏆 Gateway
+            Exam → Competition Tier</span></div>
+        <div class="rpg-tier" data-tier="competition">
+          <div class="tier-header"><span class="tier-badge competition">Tier 3 — Competition Competent</span><span
+              class="tier-icon">🏆</span></div>
+          <div class="rpg-nodes">
+            <div class="rpg-node reveal" data-level="7">
+              <div class="level-num">07</div>
+              <h4>CC Junior</h4>
+              <p>Olympiad Basics</p>
+              <div class="node-expand">
+                <div class="node-detail">Competition math strategies, science olympiad prep, IEO preparation, NCO
+                  basics, quiz training.</div>
+              </div>
+            </div>
+            <div class="rpg-node reveal reveal-delay-1" data-level="8">
+              <div class="level-num">08</div>
+              <h4>CC Intermediate</h4>
+              <p>National Readiness</p>
+              <div class="node-expand">
+                <div class="node-detail">National-level problem sets, NSO/NSTSE prep, spelling bee, hackathon prep,
+                  advanced quiz mastery.</div>
+              </div>
+            </div>
+            <div class="rpg-node reveal reveal-delay-2" data-level="9">
+              <div class="level-num">09</div>
+              <h4>CC Senior</h4>
+              <p>International Standards</p>
+              <div class="node-expand">
+                <div class="node-detail">IMO/ISMO level problems, international science, global English proficiency, AI
+                  competitions, world-class quiz.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tier-checkpoint"><span class="checkpoint-badge"
+            style="background:rgba(255,215,0,0.1);color:var(--gold);border:1px solid rgba(255,215,0,0.2)">👑 Gateway
+            Exam → Champion Tier</span></div>
+        <div class="rpg-tier" data-tier="champion">
+          <div class="tier-header"><span class="tier-badge champion">Tier 4 — Champion</span><span
+              class="tier-icon">👑</span></div>
+          <div class="rpg-nodes">
+            <div class="rpg-node reveal" data-level="10">
+              <div class="level-num">10</div>
+              <h4>Champion Junior</h4>
+              <p>Mentorship &amp; Mastery</p>
+              <div class="node-expand">
+                <div class="node-detail">Peer mentoring, cross-domain projects, innovation challenges, research basics,
+                  portfolio building.</div>
+              </div>
+            </div>
+            <div class="rpg-node reveal reveal-delay-1" data-level="11">
+              <div class="level-num">11</div>
+              <h4>Champion Intermediate</h4>
+              <p>Innovation &amp; Leadership</p>
+              <div class="node-expand">
+                <div class="node-detail">Original problem creation, teaching practice, community projects, advanced
+                  research, leadership mastery.</div>
+              </div>
+            </div>
+            <div class="rpg-node reveal reveal-delay-2" data-level="12">
+              <div class="level-num">12</div>
+              <h4>Champion Senior</h4>
+              <p>Grand Master</p>
+              <div class="node-expand">
+                <div class="node-detail">Personal excellence portfolio, international competition strategy, legacy
+                  project, Grand Master title achievement.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROFICIENCY -->
+  <section class="section" id="proficiency">
+    <div class="container">
+      <div class="section-header reveal"><span class="section-label">Our Philosophy</span>
+        <h2 class="section-title">Progress at Your Pace, Not Your Age</h2>
+        <p class="section-subtitle">Every child achieves real mastery before advancing.</p>
+      </div>
+      <div class="proficiency-grid">
+        <div class="reveal">
+          <h3
+            style="font-family:var(--font-heading);font-size:1.2rem;font-weight:600;color:var(--text-white);margin-bottom:20px">
+            Traditional System</h3>
+          <div class="prof-ladder">
+            <div class="rung">Grade 8 — Age 13 only</div>
+            <div class="rung">Grade 7 — Age 12 only</div>
+            <div class="rung">Grade 6 — Age 11 only</div>
+            <div class="rung">Grade 5 — Age 10 only</div>
+            <div class="rung">Grade 4 — Age 9 only</div>
+            <div class="rung">Grade 3 — Age 8 only</div>
+          </div>
+          <p style="font-size:0.8rem;color:#FF4444;margin-top:12px;text-align:center">Rigid. One-size-fits-all.</p>
+        </div>
+        <div class="proficiency-messages reveal reveal-delay-2">
+          <div class="prof-msg"><span class="msg-icon">🚀</span>
+            <h4>6-year-old excels?</h4>
+            <p>Move forward to the next mastery level — no waiting.</p>
+          </div>
+          <div class="prof-msg"><span class="msg-icon">🤝</span>
+            <h4>10-year-old needs support?</h4>
+            <p>Build foundations without stigma — at their own pace.</p>
+          </div>
+          <div class="prof-msg"><span class="msg-icon">🎯</span>
+            <h4>Every child achieves REAL mastery</h4>
+            <p>75% minimum score required before advancing to the next level.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPETITION -->
+  <section class="section competition-section" id="competition">
+    <div class="container">
+      <div class="section-header reveal"><span class="section-label">Excel &amp; Compete</span>
+        <h2 class="section-title">Built-In Competition Excellence Pathway</h2>
+        <p class="section-subtitle">Prepare your child for national &amp; international recognition.</p>
+      </div>
+      <div class="competition-grid">
+        <div class="comp-card reveal reveal-delay-1">
+          <div class="comp-icon">📐</div>
+          <h4>Mathematics</h4>
+          <div class="comp-badges"><span class="comp-badge">IMO</span><span class="comp-badge">ISMO</span><span
+              class="comp-badge">Math Kangaroo</span><span class="comp-badge">SASMO</span></div>
+        </div>
+        <div class="comp-card reveal reveal-delay-2">
+          <div class="comp-icon">🧪</div>
+          <h4>Science</h4>
+          <div class="comp-badges"><span class="comp-badge">NSO</span><span class="comp-badge">NSTSE</span><span
+              class="comp-badge">Science Olympiad</span></div>
+        </div>
+        <div class="comp-card reveal reveal-delay-3">
+          <div class="comp-icon">✍️</div>
+          <h4>English</h4>
+          <div class="comp-badges"><span class="comp-badge">IEO</span><span class="comp-badge">Spelling Bee</span><span
+              class="comp-badge">Essay Comp.</span></div>
+        </div>
+        <div class="comp-card reveal reveal-delay-4">
+          <div class="comp-icon">🖥️</div>
+          <h4>Cyber</h4>
+          <div class="comp-badges"><span class="comp-badge">NCO</span><span class="comp-badge">Hackathons</span><span
+              class="comp-badge">AI Challenge</span></div>
+        </div>
+        <div class="comp-card reveal reveal-delay-5">
+          <div class="comp-icon">🌐</div>
+          <h4>General Knowledge</h4>
+          <div class="comp-badges"><span class="comp-badge">IGKO</span><span class="comp-badge">Quiz Champs</span><span
+              class="comp-badge">Current Affairs</span></div>
+        </div>
+        <div class="comp-card reveal reveal-delay-6">
+          <div class="comp-icon">🎨</div>
+          <h4>Art, Craft & Personality</h4>
+          <div class="comp-badges"><span class="comp-badge">IADO</span><span class="comp-badge">Art Olympiad</span><span
+              class="comp-badge">Craft Challenge</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- COMPARISON -->
+  <section class="section" id="why">
+    <div class="container">
+      <div class="section-header reveal"><span class="section-label">The Comparison</span>
+        <h2 class="section-title">Why Parents Choose Brain Forge</h2>
+        <p class="section-subtitle">See how Brain Forge compares to traditional programs.</p>
+      </div>
+      <div class="comparison-table reveal">
+        <div class="comparison-col comparison-traditional">
+          <h3>Traditional Programs</h3>
+          <div class="comp-row"><span>Progression</span><span style="color:var(--red)">✕ Age-based</span></div>
+          <div class="comp-row"><span>Subjects</span><span style="color:var(--red)">✕ 1–2 subjects</span></div>
+          <div class="comp-row"><span>Thinking Skills</span><span style="color:var(--red)">✕ Rarely included</span>
+          </div>
+          <div class="comp-row"><span>Competition Prep</span><span style="color:var(--red)">✕ Separate programs</span>
+          </div>
+          <div class="comp-row"><span>Personality Dev</span><span style="color:var(--red)">✕ Not included</span></div>
+          <div class="comp-row"><span>Art &amp; Creativity</span><span style="color:var(--red)">✕ Rarely included</span>
+          </div>
+          <div class="comp-row"><span>Levels</span><span style="color:var(--red)">✕ 3–4 levels</span></div>
+          <div class="comp-row"><span>Assessment</span><span style="color:var(--red)">✕ Test-only</span></div>
+          <div class="comp-row"><span>Recognition</span><span style="color:var(--red)">✕ Certificate</span></div>
+        </div>
+        <div class="comparison-col comparison-brainforge">
+          <h3>✦ Brain Forge</h3>
+          <div class="comp-row"><span>Progression</span><span style="color:var(--green)">✓ Proficiency-based</span>
+          </div>
+          <div class="comp-row"><span>Subjects</span><span style="color:var(--green)">✓ 6 integrated pillars</span>
+          </div>
+          <div class="comp-row"><span>Thinking Skills</span><span style="color:var(--green)">✓ HOTS at every
+              level</span></div>
+          <div class="comp-row"><span>Competition Prep</span><span style="color:var(--green)">✓ Built-in pathway</span>
+          </div>
+          <div class="comp-row"><span>Personality Dev</span><span style="color:var(--green)">✓ Fully integrated</span>
+          </div>
+          <div class="comp-row"><span>Art &amp; Creativity</span><span style="color:var(--green)">✓ Core
+              component</span></div>
+          <div class="comp-row"><span>Levels</span><span style="color:var(--green)">✓ 12 mastery levels</span></div>
+          <div class="comp-row"><span>Assessment</span><span style="color:var(--green)">✓ Multi-dimensional</span></div>
+          <div class="comp-row"><span>Recognition</span><span style="color:var(--green)">✓ Grand Master Title</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ASSESSMENT -->
+  <section class="section assessment-section" id="assessment">
+    <div class="container">
+      <div class="section-header reveal"><span class="section-label">Assessment</span>
+        <h2 class="section-title">Multi-Dimensional Assessment Framework</h2>
+        <p class="section-subtitle">We measure growth across every dimension, not just test scores.</p>
+      </div>
+      <div class="assess-grid">
+        <div class="assess-card reveal reveal-delay-1">
+          <div class="assess-icon">📝</div>
+          <h4>Formative Assessment</h4>
+          <p>Ongoing tracking of daily learning progress</p>
+        </div>
+        <div class="assess-card reveal reveal-delay-2">
+          <div class="assess-icon">📦</div>
+          <h4>Module Assessment</h4>
+          <p>Topic-level mastery verification</p>
+        </div>
+        <div class="assess-card reveal reveal-delay-3">
+          <div class="assess-icon">📊</div>
+          <h4>Level Assessment</h4>
+          <p>Readiness evaluation for advancement</p>
+        </div>
+        <div class="assess-card reveal reveal-delay-4">
+          <div class="assess-icon">🧠</div>
+          <h4>HOTS Assessment</h4>
+          <p>Critical thinking &amp; higher-order growth</p>
+        </div>
+        <div class="assess-card reveal reveal-delay-5">
+          <div class="assess-icon">📂</div>
+          <h4>Portfolio Review</h4>
+          <p>Holistic development documentation</p>
+        </div>
+        <div class="assess-card reveal reveal-delay-6">
+          <div class="assess-icon">🚪</div>
+          <h4>Gateway Exams</h4>
+          <p>Tier advancement evaluations</p>
+        </div>
+      </div>
+      <div class="section-header reveal" style="margin-bottom:32px"><span class="section-label">Recognition</span>
+        <h2 class="section-title" style="font-size:1.8rem">Celebrate Every Achievement</h2>
+      </div>
+      <div class="recognition-grid reveal">
+        <div class="recognition-item"><span class="rec-icon">📜</span> Level Certificates</div>
+        <div class="recognition-item"><span class="rec-icon">🏅</span> Badges</div>
+        <div class="recognition-item"><span class="rec-icon">🏆</span> Tier Trophies</div>
+        <div class="recognition-item"><span class="rec-icon">⭐</span> Brain Forge Star Awards</div>
+        <div class="recognition-item"><span class="rec-icon">🛡️</span> Champion Shields</div>
+        <div class="recognition-item highlight"><span class="rec-icon">👑</span> Grand Master Title</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CURRICULUM TIMELINE -->
+  <section class="section" id="curriculum">
+    <div class="container">
+      <div class="section-header reveal"><span class="section-label">Explore</span>
+        <h2 class="section-title">Explore Our Comprehensive Curriculum</h2>
+        <p class="section-subtitle">Click on each tier to discover what your child will learn.</p>
+      </div>
+      <div class="curr-timeline reveal">
+        <div class="curr-track">
+          <div class="curr-track-line"></div>
+          <div class="curr-track-fill" id="currTrackFill"></div>
+        </div>
+        <div class="curr-stops">
+          <button class="curr-stop active" data-tier="junior">
+            <div class="stop-dot"></div>
+            <div class="stop-icon">🌱</div>
+            <div class="stop-label">Junior</div>
+            <div class="stop-levels">Levels 1–3</div>
+          </button>
+          <button class="curr-stop" data-tier="senior">
+            <div class="stop-dot"></div>
+            <div class="stop-icon">🌳</div>
+            <div class="stop-label">Senior</div>
+            <div class="stop-levels">Levels 4–6</div>
+          </button>
+          <button class="curr-stop" data-tier="competition">
+            <div class="stop-dot"></div>
+            <div class="stop-icon">🏆</div>
+            <div class="stop-label">Competition</div>
+            <div class="stop-levels">Levels 7–9</div>
+          </button>
+          <button class="curr-stop" data-tier="champion">
+            <div class="stop-dot"></div>
+            <div class="stop-icon">👑</div>
+            <div class="stop-label">Champion</div>
+            <div class="stop-levels">Levels 10–12</div>
+          </button>
+        </div>
+      </div>
+      <div class="curr-panels">
+        <div class="curr-panel active" id="panel-junior">
+          <div class="panel-header">
+            <h3>🌱 Junior Tier <span>— Levels 1–3</span></h3>
+            <p>Building strong foundations across all pillars</p>
+          </div>
+          <div class="subject-grid">
+            <div class="subject-card" data-accent="blue">
+              <div class="subject-icon">🧮</div>
+              <h4>Mathematics</h4>
+              <div class="topic-pills"><span>Number sense</span><span>Pattern recognition</span><span>Intro to
+                  geometry</span><span>Word problems</span></div>
+            </div>
+            <div class="subject-card" data-accent="green">
+              <div class="subject-icon">🔬</div>
+              <h4>Science</h4>
+              <div class="topic-pills"><span>Living vs non-living</span><span>Plant &amp; animal
+                  basics</span><span>Weather &amp; seasons</span><span>Simple experiments</span></div>
+            </div>
+            <div class="subject-card" data-accent="purple">
+              <div class="subject-icon">📖</div>
+              <h4>English</h4>
+              <div class="topic-pills"><span>Phonics &amp; reading</span><span>Sentence
+                  building</span><span>Storytelling</span><span>Vocabulary basics</span></div>
+            </div>
+            <div class="subject-card" data-accent="orange">
+              <div class="subject-icon">💻</div>
+              <h4>Cyber</h4>
+              <div class="topic-pills"><span>Digital awareness</span><span>Block coding intro</span><span>Internet
+                  safety</span><span>Basic tools</span></div>
+            </div>
+            <div class="subject-card" data-accent="pink">
+              <div class="subject-icon">🌍</div>
+              <h4>General Knowledge</h4>
+              <div class="topic-pills"><span>India basics</span><span>World awareness</span><span>Famous
+                  people</span><span>Festivals &amp; culture</span></div>
+            </div>
+            <div class="subject-card" data-accent="gold">
+              <div class="subject-icon">🎨</div>
+              <h4>Art &amp; Personality</h4>
+              <div class="topic-pills"><span>Drawing basics</span><span>Craft
+                  projects</span><span>Teamwork</span><span>Self-expression</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="curr-panel" id="panel-senior">
+          <div class="panel-header">
+            <h3>🌳 Senior Tier <span>— Levels 4–6</span></h3>
+            <p>Expanding knowledge and building independent thinking</p>
+          </div>
+          <div class="subject-grid">
+            <div class="subject-card" data-accent="blue">
+              <div class="subject-icon">🧮</div>
+              <h4>Mathematics</h4>
+              <div class="topic-pills"><span>Fractions &amp; decimals</span><span>Geometry &amp;
+                  mensuration</span><span>Pre-algebra</span><span>Data &amp; statistics</span></div>
+            </div>
+            <div class="subject-card" data-accent="green">
+              <div class="subject-icon">🔬</div>
+              <h4>Science</h4>
+              <div class="topic-pills"><span>Human body</span><span>Force &amp; energy</span><span>Chemical
+                  reactions</span><span>Earth &amp; ecology</span></div>
+            </div>
+            <div class="subject-card" data-accent="purple">
+              <div class="subject-icon">📖</div>
+              <h4>English</h4>
+              <div class="topic-pills"><span>Essay writing</span><span>Debate &amp;
+                  speaking</span><span>Comprehension</span><span>Grammar mastery</span></div>
+            </div>
+            <div class="subject-card" data-accent="orange">
+              <div class="subject-icon">💻</div>
+              <h4>Cyber</h4>
+              <div class="topic-pills"><span>Programming basics</span><span>Cyber ethics</span><span>Web
+                  development</span><span>Digital tools</span></div>
+            </div>
+            <div class="subject-card" data-accent="pink">
+              <div class="subject-icon">🌍</div>
+              <h4>General Knowledge</h4>
+              <div class="topic-pills"><span>World geography</span><span>History deep-dives</span><span>Current
+                  events</span><span>Science &amp; tech GK</span></div>
+            </div>
+            <div class="subject-card" data-accent="gold">
+              <div class="subject-icon">🎨</div>
+              <h4>Art &amp; Personality</h4>
+              <div class="topic-pills"><span>Emotional intelligence</span><span>Team leadership</span><span>Drawing
+                  &amp; painting</span><span>Public presentation</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="curr-panel" id="panel-competition">
+          <div class="panel-header">
+            <h3>🏆 Competition Tier <span>— Levels 7–9</span></h3>
+            <p>Olympiad-level preparation and national readiness</p>
+          </div>
+          <div class="subject-grid">
+            <div class="subject-card" data-accent="blue">
+              <div class="subject-icon">🧮</div>
+              <h4>Olympiad Math</h4>
+              <div class="topic-pills"><span>Combinatorics</span><span>Number theory</span><span>Competition
+                  strategies</span><span>International problems</span></div>
+            </div>
+            <div class="subject-card" data-accent="green">
+              <div class="subject-icon">🔬</div>
+              <h4>Science Olympiad</h4>
+              <div class="topic-pills"><span>NSO/NSTSE prep</span><span>Advanced experiments</span><span>Research
+                  methods</span><span>Scientific papers</span></div>
+            </div>
+            <div class="subject-card" data-accent="purple">
+              <div class="subject-icon">📖</div>
+              <h4>English Mastery</h4>
+              <div class="topic-pills"><span>IEO preparation</span><span>Spelling bee</span><span>Literary
+                  analysis</span><span>Global proficiency</span></div>
+            </div>
+            <div class="subject-card" data-accent="orange">
+              <div class="subject-icon">💻</div>
+              <h4>Cyber Tech</h4>
+              <div class="topic-pills"><span>Algorithms &amp; logic</span><span>Hackathon prep</span><span>AI &amp; ML
+                  basics</span><span>NCO mastery</span></div>
+            </div>
+            <div class="subject-card" data-accent="pink">
+              <div class="subject-icon">🌍</div>
+              <h4>Quiz Mastery</h4>
+              <div class="topic-pills"><span>IGKO prep</span><span>Quiz championship</span><span>Advanced current
+                  affairs</span><span>Speed rounds</span></div>
+            </div>
+            <div class="subject-card" data-accent="gold">
+              <div class="subject-icon">🎨</div>
+              <h4>Creative Excellence</h4>
+              <div class="topic-pills"><span>Art Olympiad</span><span>Design thinking</span><span>Portfolio
+                  building</span><span>Innovation projects</span></div>
+            </div>
+          </div>
+        </div>
+        <div class="curr-panel" id="panel-champion">
+          <div class="panel-header">
+            <h3>👑 Champion Tier <span>— Levels 10–12</span></h3>
+            <p>Mastery, mentorship, and the path to Grand Master</p>
+          </div>
+          <div class="subject-grid">
+            <div class="subject-card" data-accent="blue">
+              <div class="subject-icon">🧮</div>
+              <h4>Advanced Research</h4>
+              <div class="topic-pills"><span>Original problems</span><span>Cross-domain projects</span><span>Math
+                  research</span><span>Publication prep</span></div>
+            </div>
+            <div class="subject-card" data-accent="green">
+              <div class="subject-icon">🔬</div>
+              <h4>Science Innovation</h4>
+              <div class="topic-pills"><span>Research papers</span><span>Innovation challenges</span><span>Lab
+                  mastery</span><span>Science fairs</span></div>
+            </div>
+            <div class="subject-card" data-accent="purple">
+              <div class="subject-icon">📖</div>
+              <h4>Communication</h4>
+              <div class="topic-pills"><span>Teaching practice</span><span>Content creation</span><span>Oratory
+                  mastery</span><span>Published writing</span></div>
+            </div>
+            <div class="subject-card" data-accent="orange">
+              <div class="subject-icon">💻</div>
+              <h4>Tech Innovation</h4>
+              <div class="topic-pills"><span>Full-stack projects</span><span>AI applications</span><span>Open
+                  source</span><span>Tech leadership</span></div>
+            </div>
+            <div class="subject-card" data-accent="pink">
+              <div class="subject-icon">🌍</div>
+              <h4>Global Awareness</h4>
+              <div class="topic-pills"><span>International strategy</span><span>Community impact</span><span>Legacy
+                  projects</span><span>World citizenship</span></div>
+            </div>
+            <div class="subject-card" data-accent="gold">
+              <div class="subject-icon">🎨</div>
+              <h4>Grand Master</h4>
+              <div class="topic-pills"><span>Excellence portfolio</span><span>Peer mentoring</span><span>Leadership
+                  legacy</span><span>Grand Master title</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURES -->
+  <section class="section features-section" id="features">
+    <div class="container">
+      <div class="section-header reveal"><span class="section-label">Experience</span>
+        <h2 class="section-title">The Brain Forge Experience</h2>
+        <p class="section-subtitle">What makes learning with us truly different.</p>
+      </div>
+      <div class="features-grid">
+        <div class="feature-card reveal reveal-delay-1">
+          <div class="feature-icon">⚙️</div>
+          <h3>HOTS Integration</h3>
+          <p>Higher Order Thinking Skills embedded at every level. Children don't just memorize — they analyze,
+            evaluate, and create.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-2">
+          <div class="feature-icon">🚀</div>
+          <h3>Project-Based Learning</h3>
+          <p>Monthly cross-domain projects with real-world application of knowledge. Learn by doing, not just reading.
+          </p>
+        </div>
+        <div class="feature-card reveal reveal-delay-3">
+          <div class="feature-icon">💻</div>
+          <h3>Digital Platform</h3>
+          <p>Interactive online portal for practice, assessments, and progress tracking. Learn anytime, anywhere.</p>
+        </div>
+        <div class="feature-card reveal reveal-delay-4">
+          <div class="feature-icon">📈</div>
+          <h3>Personalized Pace</h3>
+          <p>Individual learning curves respected. Advance when ready, strengthen when needed — no pressure, no stigma.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUTCOMES -->
+  <section class="section" id="outcomes">
+    <div class="container">
+      <div class="section-header reveal"><span class="section-label">Results</span>
+        <h2 class="section-title">Measurable Excellence</h2>
+        <p class="section-subtitle">Clear benchmarks. Real outcomes. Proven framework.</p>
+      </div>
+      <div class="stats-row">
+        <div class="stat-card reveal reveal-delay-1">
+          <div class="stat-number" data-target="12">0</div>
+          <div class="stat-label">Mastery Levels</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-2">
+          <div class="stat-number" data-target="6">0</div>
+          <div class="stat-label">Core Pillars</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-3">
+          <div class="stat-number" data-target="75" data-suffix="%">0</div>
+          <div class="stat-label">Min. Advancement Score</div>
+        </div>
+        <div class="stat-card reveal reveal-delay-4">
+          <div class="stat-number" data-target="100" data-suffix="%">0</div>
+          <div class="stat-label">Holistic Development</div>
+        </div>
+      </div>
+      <div class="outcomes-tags reveal">
+        <div class="outcome-tag">🏅 Competition Ready</div>
+        <div class="outcome-tag">🧠 Critical Thinkers</div>
+        <div class="outcome-tag">💬 Confident Communicators</div>
+        <div class="outcome-tag">💻 Digital Natives</div>
+        <div class="outcome-tag">🔧 Creative Problem Solvers</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DELIVERY -->
+  <section class="section delivery-section" id="delivery">
+    <div class="container">
+      <div class="section-header reveal"><span class="section-label">How It Works</span>
+        <h2 class="section-title">How Brain Forge Works</h2>
+        <p class="section-subtitle">A 50-minute session designed for maximum engagement and learning.</p>
+      </div>
+      <div class="timeline reveal">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-time">5 min</div>
+          <div class="timeline-title">Warm-Up</div>
+          <div class="timeline-desc">Brain teaser</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-time">15 min</div>
+          <div class="timeline-title">Concept Intro</div>
+          <div class="timeline-desc">Interactive teaching</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-time">10 min</div>
+          <div class="timeline-title">Guided Practice</div>
+          <div class="timeline-desc">Worked examples</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-time">10 min</div>
+          <div class="timeline-title">Independent</div>
+          <div class="timeline-desc">Solo problem-solving</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-time">5 min</div>
+          <div class="timeline-title">HOTS Challenge</div>
+          <div class="timeline-desc">Critical thinking</div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-time">5 min</div>
+          <div class="timeline-title">Wrap-Up</div>
+          <div class="timeline-desc">Key takeaways</div>
+        </div>
+      </div>
+      <div class="delivery-modes reveal">
+        <div class="delivery-mode"><span class="mode-icon">🏫</span><span>Classroom Sessions</span></div>
+        <div class="delivery-mode"><span class="mode-icon">📚</span><span>Proprietary Workbooks</span></div>
+        <div class="delivery-mode"><span class="mode-icon">💻</span><span>Digital Platform</span></div>
+        <div class="delivery-mode"><span class="mode-icon">🏠</span><span>Home Practice</span></div>
+        <div class="delivery-mode"><span class="mode-icon">🔬</span><span>Project-Based Learning</span></div>
+        <div class="delivery-mode"><span class="mode-icon">🚌</span><span>Field Trips</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ENROLLMENT -->
+  <section class="section" id="enroll">
+    <div class="container">
+      <div class="section-header reveal"><span class="section-label">Get Started</span>
+        <h2 class="section-title">Begin Your Child's Mastery Journey</h2>
+        <p class="section-subtitle">Book a free assessment to discover your child's current proficiency level.</p>
+      </div>
+      <div class="enroll-wrapper">
+        <div class="enroll-info reveal">
+          <h3>Start with a Free Assessment</h3>
+          <p>Discover where your child stands and get a personalized learning pathway recommendation from our education
+            experts.</p>
+          <div class="enroll-badges">
+            <div class="enroll-badge">
+              <div class="eb-icon">🚫</div><span>No Age Discrimination</span>
+            </div>
+            <div class="enroll-badge">
+              <div class="eb-icon">🛤️</div><span>Personalized Learning Path</span>
+            </div>
+            <div class="enroll-badge">
+              <div class="eb-icon">🏆</div><span>Competition Preparation Included</span>
+            </div>
+            <div class="enroll-badge">
+              <div class="eb-icon">📊</div><span>Detailed Proficiency Report</span>
+            </div>
+          </div>
+        </div>
+        <form class="enroll-form reveal reveal-delay-2" id="enrollForm">
+          <div class="form-row">
+            <div class="form-group"><label>Child's Name</label><input type="text" required><span
+                class="validation-icon">✓</span></div>
+            <div class="form-group"><label>Age</label><input type="number" min="5" max="14" required><span
+                class="validation-icon">✓</span></div>
+          </div>
+          <div class="form-row">
+            <div class="form-group"><label>Parent Name</label><input type="text" required><span
+                class="validation-icon">✓</span></div>
+            <div class="form-group"><label>Phone</label><input type="tel" required><span
+                class="validation-icon">✓</span></div>
+          </div>
+          <div class="form-group"><label>Email</label><input type="email" required><span
+              class="validation-icon">✓</span></div>
+          <div class="form-group"><label>Interest Level</label>
+            <select required>
+              <option value=""></option>
+              <option>Junior Tier (Levels 1-3)</option>
+              <option>Senior Tier (Levels 4-6)</option>
+              <option>Competition Competent (Levels 7-9)</option>
+              <option>Champion Tier (Levels 10-12)</option>
+              <option>Not sure — Need assessment</option>
+            </select><span class="validation-icon">✓</span>
+          </div>
+          <div class="form-group"><label>Message (Optional)</label><textarea></textarea></div>
+          <button type="submit" class="btn btn-primary btn-lg magnetic">Book Free Assessment →</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- BENTO TESTIMONIALS -->
+  <section class="section testimonials-section" id="testimonials">
+    <div class="container">
+      <div class="section-header reveal"><span class="section-label">Testimonials</span>
+        <h2 class="section-title">Trusted by Forward-Thinking Parents</h2>
+        <p class="section-subtitle">Hear from families who chose excellence.</p>
+      </div>
+      <div class="bento-grid">
+        <div class="bento-card wide reveal">
+          <div class="bento-quote">"</div>
+          <div class="bento-stars">★★★★★</div>
+          <p class="bento-text">"My 7-year-old was placed in Level 4 based on proficiency — not age. That flexibility is
+            what sets Brain Forge apart. She's thriving and actually excited about learning."</p>
+          <div class="bento-author">
+            <div class="bento-avatar">AP</div>
+            <div>
+              <div class="bento-name">Ananya Patel</div>
+              <div class="bento-role">Parent of Meera, Age 7</div>
+            </div>
+          </div>
+        </div>
+        <div class="bento-card reveal reveal-delay-1">
+          <div class="bento-stat">
+            <div class="bento-stat-number" style="color:var(--blue)" data-target="12">0</div>
+            <div class="bento-stat-label">Mastery Levels</div>
+          </div>
+        </div>
+        <div class="bento-card reveal reveal-delay-2">
+          <div class="bento-stat">
+            <div class="bento-stat-number" style="color:var(--green)" data-target="6">0</div>
+            <div class="bento-stat-label">Learning Pillars</div>
+            <div class="bento-progress">
+              <div class="bento-progress-bar">
+                <div class="bento-progress-fill" style="width:100%;background:var(--green)"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bento-card tall reveal reveal-delay-1">
+          <div class="bento-quote">"</div>
+          <div class="bento-stars">★★★★★</div>
+          <p class="bento-text">"The six-pillar approach is brilliant. My son doesn't just study math — he connects it
+            with science, tech, and creativity. Brain Forge has completely transformed how he thinks."</p>
+          <div class="bento-author">
+            <div class="bento-avatar">RS</div>
+            <div>
+              <div class="bento-name">Rajesh Sharma</div>
+              <div class="bento-role">Parent of Arjun, Age 11</div>
+            </div>
+          </div>
+        </div>
+        <div class="bento-card wide reveal reveal-delay-2">
+          <div class="bento-quote">"</div>
+          <div class="bento-stars">★★★★★</div>
+          <p class="bento-text">"Within 6 months, my daughter won her first Math Olympiad medal. The
+            competition-readiness pathway built into Brain Forge made all the difference. Worth every penny."</p>
+          <div class="bento-author">
+            <div class="bento-avatar">PK</div>
+            <div>
+              <div class="bento-name">Priya Kumar</div>
+              <div class="bento-role">Parent of Siya, Age 9</div>
+            </div>
+          </div>
+        </div>
+        <div class="bento-card reveal reveal-delay-3">
+          <div class="bento-stat">
+            <div class="bento-stat-number" style="color:var(--gold)">🏆</div>
+            <div class="bento-stat-label">Competition-Ready Students</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ -->
+  <section class="section" id="faq">
+    <div class="container">
+      <div class="section-header reveal"><span class="section-label">Questions</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">Everything you need to know about Brain Forge.</p>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            <h4>How is Brain Forge different from traditional tuition?</h4><span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Brain Forge uses a proficiency-based progression system instead of age-based levels. We integrate 6
+              learning pillars with Higher Order Thinking Skills at every level, and include a built-in competition
+              readiness pathway — all things traditional tuition doesn't offer.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            <h4>What if my child is ahead or behind for their age?</h4><span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>That's the beauty of our system! A 6-year-old who excels can advance beyond their age group, while a
+              10-year-old who needs support can strengthen foundations without stigma. Every child is placed according
+              to their actual proficiency level.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            <h4>How are children assessed?</h4><span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>We use a multi-dimensional assessment framework including formative assessments, module assessments, HOTS
+              evaluations, portfolio reviews, and gateway exams. A minimum 75% score is required before advancing.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            <h4>What competitions does Brain Forge prepare for?</h4><span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Our Competition Competent and Champion tiers prepare students for IMO, ISMO, Math Kangaroo, SASMO, NSO,
+              NSTSE, IEO, Spelling Bee, NCO, IGKO, and various quiz championships at national and international levels.
+            </p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            <h4>What is the time commitment?</h4><span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>Each session is a focused 50 minutes, structured for maximum engagement. Sessions include warm-up,
+              concept introduction, guided practice, independent work, HOTS challenges, and a wrap-up.</p>
+          </div>
+        </div>
+        <div class="faq-item reveal">
+          <div class="faq-question">
+            <h4>How do I know which level is right for my child?</h4><span class="faq-toggle">+</span>
+          </div>
+          <div class="faq-answer">
+            <p>We offer a free assessment that evaluates proficiency across all six pillars. Based on the results, we
+              recommend the ideal starting level and create a personalized learning pathway. Book your free assessment
+              today!</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA -->
+  <section class="final-cta" id="final-cta">
+    <div class="container" style="position:relative;z-index:1">
+      <div class="reveal"><span class="section-label">Ready?</span>
+        <h2 class="section-title">Ready to Forge Excellence?</h2>
+        <p class="section-subtitle">Start your child's journey from Curious to Champion.</p>
+      </div>
+      <div class="final-cta-buttons reveal reveal-delay-2">
+        <a href="#enroll" class="btn btn-primary btn-lg magnetic">Book Free Assessment →</a>
+        <a href="#" class="btn btn-outline btn-lg magnetic">Download Brochure</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="#" class="nav-logo" style="margin-bottom:8px">
+            <div class="logo-icon">🧠</div>Brain Forge
+          </a>
+          <p>Forging Young Minds for Tomorrow. A proficiency-based educational program for children aged 5–14.</p>
+          <div class="footer-newsletter"><input type="email"
+              placeholder="Subscribe to newsletter..."><button>Subscribe</button></div>
+          <div class="footer-socials" style="margin-top:16px">
+            <div class="social-icon" title="Facebook">f</div>
+            <div class="social-icon" title="Instagram">ig</div>
+            <div class="social-icon" title="Twitter">𝕏</div>
+            <div class="social-icon" title="YouTube">▶</div>
+            <div class="social-icon" title="LinkedIn">in</div>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4><a href="#pillars">The 6 Pillars</a><a href="#pathway">12-Level Pathway</a><a
+            href="#competition">Competition Prep</a><a href="#enroll">Free Assessment</a><a href="#faq">FAQ</a>
+        </div>
+        <div class="footer-col">
+          <h4>Programs</h4><a href="#pathway">Junior Tier</a><a href="#pathway">Senior Tier</a><a
+            href="#pathway">Competition Competent</a><a href="#pathway">Champion Tier</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4><a href="mailto:hello@brainforge.in">hello@brainforge.in</a><a href="tel:+919876543210">+91
+            98765 43210</a><a href="#enroll">Book Assessment</a>
+        </div>
+      </div>
+      <div class="footer-tagline">Made with 💜 for young minds</div>
+      <div class="footer-bottom"><span>© 2025 Brain Forge. All rights reserved.</span>
+        <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating CTA -->
+  <div class="floating-cta" id="floatingCta">
+    <button class="close-float" id="closeFloat">✕</button>
+    <a href="#enroll" class="btn btn-primary magnetic">📚 Book Assessment</a>
+  </div>
+
+  <!-- Sound Toggle -->
+  <div class="sound-toggle" id="soundToggle" title="Toggle Sound">🔇</div>
+
+  <!-- Mobile Sticky CTA -->
+  <div class="mobile-sticky-cta"><a href="#enroll" class="btn btn-primary">Book Free Assessment →</a></div>
+
+  <!-- Confetti Container -->
+  <div class="confetti-container" id="confettiContainer"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
