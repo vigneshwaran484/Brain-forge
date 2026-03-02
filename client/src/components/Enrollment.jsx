@@ -61,15 +61,9 @@ export default function Enrollment() {
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(form)
             });
-            if (res.ok) {
-                setSubmitted(true);
-            } else {
-                const data = await res.json();
-                alert(data.errors?.[0]?.msg || data.error || 'Submission failed');
-            }
+            if (res.ok) setSubmitted(true);
         } catch (err) {
             console.error('Enrollment error:', err);
-            alert('Network error. Please try again.');
         }
         setLoading(false);
     };
