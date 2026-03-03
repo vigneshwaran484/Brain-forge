@@ -21,11 +21,13 @@ export default function FAQ() {
                 </div>
                 <div className="faq-list">
                     {faqs.map((f, i) => (
-                        <div key={i} className={`faq-item reveal${activeIdx === i ? ' active' : ''}`}>
-                            <div className="faq-question" onClick={() => setActiveIdx(activeIdx === i ? null : i)}>
-                                <h4>{f.q}</h4><span className="faq-toggle">{activeIdx === i ? '−' : '+'}</span>
+                        <div key={i} className="reveal">
+                            <div className={`faq-item${activeIdx === i ? ' active' : ''}`}>
+                                <div className="faq-question" onClick={() => setActiveIdx(activeIdx === i ? null : i)}>
+                                    <h4>{f.q}</h4><span className="faq-toggle">{activeIdx === i ? '−' : '+'}</span>
+                                </div>
+                                <div className="faq-answer"><p>{f.a}</p></div>
                             </div>
-                            <div className="faq-answer"><p>{f.a}</p></div>
                         </div>
                     ))}
                 </div>
