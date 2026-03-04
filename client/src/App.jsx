@@ -1,6 +1,7 @@
 import './index.css';
 import useScrollReveal from './hooks/useScrollReveal';
 import ScrollProgress from './components/ScrollProgress';
+import Cursor from './components/Cursor';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ProblemSolution from './components/ProblemSolution';
@@ -25,6 +26,7 @@ function App() {
   return (
     <>
       <ScrollProgress />
+      <Cursor />
       <Navbar />
       <Hero />
       <ProblemSolution />

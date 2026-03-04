@@ -92,10 +92,36 @@ select {
   font-family: inherit
 }
 
-/* Custom Cursor — Disabled */
-.cursor-dot,
+/* Custom Cursor */
+.cursor-dot {
+  position: fixed;
+  width: 8px;
+  height: 8px;
+  background: var(--blue);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10005;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s, background 0.3s
+}
+
 .cursor-ring {
-  display: none !important
+  position: fixed;
+  width: 40px;
+  height: 40px;
+  border: 1.5px solid var(--blue);
+  border-radius: 50%;
+  pointer-events: none;
+  z-index: 10004;
+  transform: translate(-50%, -50%);
+  transition: width 0.3s, height 0.3s, border-color 0.3s, background 0.3s
+}
+
+.cursor-ring.hovering {
+  width: 60px;
+  height: 60px;
+  background: rgba(0, 240, 255, 0.1);
+  border-color: var(--blue)
 }
 
 /* Scroll Progress Bar */
@@ -110,9 +136,12 @@ select {
   box-shadow: 0 0 10px rgba(0, 240, 255, 0.5)
 }
 
-/* Cursor Trail — Disabled */
+/* Cursor Trail */
 .cursor-particle {
-  display: none !important
+  position: fixed;
+  pointer-events: none;
+  z-index: 10003;
+  border-radius: 50%
 }
 
 .container {
