@@ -22,6 +22,9 @@ export default function Navbar() {
                     <a href="#competition" onClick={() => setOpen(false)}>Competitions</a>
                     <a href="#curriculum" onClick={() => setOpen(false)}>Curriculum</a>
                     <a href="#faq" onClick={() => setOpen(false)}>FAQ</a>
+                    <div className="mobile-cta-only">
+                        <a href="#enroll" className="btn btn-primary" onClick={() => setOpen(false)}>Book Free Assessment</a>
+                    </div>
                 </div>
                 <div className="nav-cta">
                     <a href="#enroll" className="btn btn-primary magnetic">Book Free Assessment</a>
