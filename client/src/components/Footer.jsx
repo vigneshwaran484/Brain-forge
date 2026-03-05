@@ -41,7 +41,13 @@ export default function Footer() {
                             <h4>Programs</h4><a href="#pathway">Junior Tier</a><a href="#pathway">Senior Tier</a><a href="#pathway">Competition Competent</a><a href="#pathway">Champion Tier</a>
                         </div>
                         <div className="footer-col">
-                            <h4>Contact</h4><a href="mailto:hello@brainforge.in">hello@brainforge.in</a><a href="tel:+919876543210">+91 98765 43210</a><a href="#enroll">Book Assessment</a>
+                            <h4>Contact</h4>
+                            <a href="mailto:hello@brainforge.in">hello@brainforge.in</a>
+                            <a href="tel:+919876543210">+91 98765 43210</a>
+                            <a href="#enroll">Book Assessment</a>
+                            <h4 style={{ marginTop: '24px' }}>Developed By</h4>
+                            <span style={{ color: 'var(--text-muted)', fontSize: '0.9rem', display: 'block' }}>Vigneshwaran C</span>
+                            <span style={{ color: 'var(--text-muted)', fontSize: '0.9rem', display: 'block' }}>Joel Xavier P</span>
                         </div>
                     </div>
                     <div className="footer-bottom"><span>© 2025 Brain Forge. All rights reserved.</span>
