@@ -1,3 +1,5 @@
+import logo from '../assets/logo.png';
+
 export default function Footer() {
     return (
         <>
@@ -18,8 +20,9 @@ export default function Footer() {
                 <div className="container">
                     <div className="footer-grid">
                         <div className="footer-brand">
-                            <a href="#" className="nav-logo" style={{ marginBottom: '8px' }}>
-                                <div className="logo-icon">🧠</div>Brain Forge
+                            <a href="#" className="nav-logo" style={{ marginBottom: '16px' }}>
+                                <img src={logo} alt="Brain Forge" className="logo-img" />
+                                <span>Brain Forge</span>
                             </a>
                             <p>Forging Young Minds for Tomorrow. A proficiency-based educational program for children aged 5–14.</p>
                             <div className="footer-newsletter"><input type="email" placeholder="Subscribe to newsletter..." /><button>Subscribe</button></div>

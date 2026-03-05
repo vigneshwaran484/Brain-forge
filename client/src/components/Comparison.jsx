@@ -26,7 +26,7 @@ export default function Comparison() {
                         ))}
                     </div>
                     <div className="comparison-col comparison-brainforge">
-                        <h3>✦ Brain Forge</h3>
+                        <h3><span className="star-icon">✦</span> Brain Forge</h3>
                         {rows.map((r, i) => (
                             <div key={i} className="comp-row"><span>{r.label}</span><span style={{ color: 'var(--green)' }}>{r.good}</span></div>
                         ))}

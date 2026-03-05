@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import logo from '../assets/logo.png';
 
 const FormGroup = ({ label, type, name, value, onChange, required, min, max, isTextArea, options }) => {
     const [isFocused, setIsFocused] = useState(false);
@@ -79,7 +80,11 @@ export default function Enrollment() {
     return (
         <section className="section" id="enroll">
             <div className="container">
-                <div className="section-header reveal"><span className="section-label">Get Started</span>
+                <div className="section-header reveal">
+                    <div className="enroll-logo-wrapper">
+                        <img src={logo} alt="Brain Forge" className="enroll-header-logo" />
+                    </div>
+                    <span className="section-label">Get Started</span>
                     <h2 className="section-title">Begin Your Child's Mastery Journey</h2>
                     <p className="section-subtitle">Book a free assessment to discover your child's current proficiency level.</p>
                 </div>

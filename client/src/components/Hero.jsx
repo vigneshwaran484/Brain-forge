@@ -1,4 +1,5 @@
 import { useEffect, useRef } from 'react';
+import logo from '../assets/logo.png';
 
 export default function Hero() {
     const canvasRef = useRef(null);
@@ -165,6 +166,9 @@ export default function Hero() {
             <div className="hero-3d"><canvas ref={canvas3dRef}></canvas></div>
             <div className="container">
                 <div className="hero-content">
+                    <div className="hero-logo-wrapper reveal">
+                        <img src={logo} alt="Brain Forge" className="hero-main-logo" />
+                    </div>
                     <div className="hero-badge"><span className="dot"></span> Now Enrolling — Ages 5 to 14</div>
                     <h1>Forging Young Minds<br /><span className="highlight gradient-text">for Tomorrow</span></h1>
                     <p className="hero-sub">Where Proficiency Defines Progress, Not Age</p>

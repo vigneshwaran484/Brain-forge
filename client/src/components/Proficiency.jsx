@@ -17,9 +17,12 @@ export default function Proficiency() {
                         <p style={{ fontSize: '0.8rem', color: '#FF4444', marginTop: '12px', textAlign: 'center' }}>Rigid. One-size-fits-all.</p>
                     </div>
                     <div className="proficiency-messages reveal reveal-delay-2">
-                        <div className="prof-msg"><span className="msg-icon">🚀</span><h4>6-year-old excels?</h4><p>Move forward to the next mastery level — no waiting.</p></div>
-                        <div className="prof-msg"><span className="msg-icon">🤝</span><h4>10-year-old needs support?</h4><p>Build foundations without stigma — at their own pace.</p></div>
-                        <div className="prof-msg"><span className="msg-icon">🎯</span><h4>Every child achieves REAL mastery</h4><p>75% minimum score required before advancing to the next level.</p></div>
+                        <h3 className="prof-bf-title">✦ The Brain Forge Way</h3>
+                        <div className="prof-msg-list">
+                            <div className="prof-msg"><span className="msg-icon">🚀</span><h4>6-year-old excels?</h4><p>Move forward to the next mastery level — no waiting.</p></div>
+                            <div className="prof-msg"><span className="msg-icon">🤝</span><h4>10-year-old needs support?</h4><p>Build foundations without stigma — at their own pace.</p></div>
+                            <div className="prof-msg"><span className="msg-icon">🎯</span><h4>Every child achieves REAL mastery</h4><p>75% minimum score required before advancing to the next level.</p></div>
+                        </div>
                     </div>
                 </div>
             </div>

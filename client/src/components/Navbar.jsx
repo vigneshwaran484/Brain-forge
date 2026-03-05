@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import logo from '../assets/logo.png';
 
 export default function Navbar() {
     const [scrolled, setScrolled] = useState(false);
@@ -14,7 +15,8 @@ export default function Navbar() {
         <nav className={`navbar${scrolled ? ' scrolled' : ''}`} id="navbar">
             <div className="container">
                 <a href="#" className="nav-logo">
-                    <div className="logo-icon">🧠</div>Brain Forge
+                    <img src={logo} alt="Brain Forge" className="logo-img" />
+                    <span>Brain Forge</span>
                 </a>
                 <div className={`nav-links${open ? ' open' : ''}`} id="navLinks">
                     <a href="#pillars" onClick={() => setOpen(false)}>Pillars</a>
