@@ -1,6 +1,8 @@
 import './index.css';
+import { Routes, Route } from 'react-router-dom';
 import useScrollReveal from './hooks/useScrollReveal';
 import ScrollProgress from './components/ScrollProgress';
+import Cursor from './components/Cursor';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import ProblemSolution from './components/ProblemSolution';
@@ -18,13 +20,15 @@ import Enrollment from './components/Enrollment';
 import Testimonials from './components/Testimonials';
 import FAQ from './components/FAQ';
 import Footer from './components/Footer';
+import SampleTest from './pages/SampleTest';
 
-function App() {
+function HomePage() {
   useScrollReveal();
 
   return (
     <>
       <ScrollProgress />
+      <Cursor />
       <Navbar />
       <Hero />
       <ProblemSolution />
@@ -43,6 +47,15 @@ function App() {
       <FAQ />
       <Footer />
     </>
+  );
+}
+
+function App() {
+  return (
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/sample-test" element={<SampleTest />} />
+    </Routes>
   );
 }
 

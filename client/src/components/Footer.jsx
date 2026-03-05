@@ -44,7 +44,6 @@ export default function Footer() {
                             <h4>Contact</h4><a href="mailto:hello@brainforge.in">hello@brainforge.in</a><a href="tel:+919876543210">+91 98765 43210</a><a href="#enroll">Book Assessment</a>
                         </div>
                     </div>
-                    <div className="footer-tagline">Made with 💜 for young minds</div>
                     <div className="footer-bottom"><span>© 2025 Brain Forge. All rights reserved.</span>
                         <div className="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms of Service</a></div>
                     </div>
