@@ -29,6 +29,7 @@ export default function Navbar() {
                     </div>
                 </div>
                 <div className="nav-cta">
+                    <a href="/Brain-Forge-Brochure.pdf" download="Brain-Forge-Brochure.pdf" className="btn btn-outline magnetic">Download Brochure</a>
                     <a href="#enroll" className="btn btn-primary magnetic">Book Free Assessment</a>
                 </div>
                 <div className={`hamburger${open ? ' open' : ''}`} onClick={() => setOpen(!open)}>

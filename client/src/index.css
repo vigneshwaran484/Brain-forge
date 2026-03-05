@@ -321,9 +321,15 @@ select {
   width: 100%
 }
 
+.nav-cta {
+  display: flex;
+  align-items: center;
+  gap: 10px
+}
+
 .nav-cta .btn {
-  padding: 10px 24px;
-  font-size: 0.85rem
+  padding: 10px 18px;
+  font-size: 0.82rem
 }
 
 .mobile-cta-only {
@@ -495,9 +501,15 @@ select {
 
 .hero-ctas {
   display: flex;
-  gap: 16px;
+  gap: 12px;
   flex-wrap: wrap;
+  align-items: center;
   margin-bottom: 48px
+}
+
+.hero-ctas .btn-lg {
+  padding: 16px 26px;
+  font-size: 0.97rem
 }
 
 .hero-trust {

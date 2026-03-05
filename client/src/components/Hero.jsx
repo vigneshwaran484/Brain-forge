@@ -176,6 +176,7 @@ export default function Hero() {
                     <div className="hero-ctas">
                         <a href="#pillars" className="btn btn-primary btn-lg magnetic">Explore Our Program ↓</a>
                         <a href="#enroll" className="btn btn-outline btn-lg magnetic">Book Free Assessment</a>
+                        <a href="/Brain-Forge-Brochure.pdf" download="Brain-Forge-Brochure.pdf" className="btn btn-outline btn-lg magnetic">Download Brochure</a>
                     </div>
                     <div className="hero-trust">
                         <div className="trust-badge"><span className="badge-icon">🎓</span> Ages 5–14</div>

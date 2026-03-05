@@ -11,7 +11,7 @@ export default function Footer() {
                     </div>
                     <div className="final-cta-buttons reveal reveal-delay-2">
                         <a href="#enroll" className="btn btn-primary btn-lg magnetic">Book Free Assessment →</a>
-                        <a href="#" className="btn btn-outline btn-lg magnetic">Download Brochure</a>
+                        <a href="/Brain-Forge-Brochure.pdf" download="Brain-Forge-Brochure.pdf" className="btn btn-outline btn-lg magnetic">Download Brochure</a>
                     </div>
                 </div>
             </section>
