@@ -42,8 +42,10 @@ export default function Footer() {
                         </div>
                         <div className="footer-col">
                             <h4>Contact</h4>
-                            <a href="mailto:hello@brainforge.in">hello@brainforge.in</a>
-                            <a href="tel:+919876543210">+91 98765 43210</a>
+                            <span style={{ color: 'var(--text-muted)', fontSize: '0.88rem', display: 'block' }}>The Brahmos Learning Centre</span>
+                            <span style={{ color: 'var(--text-muted)', fontSize: '0.82rem', display: 'block', marginBottom: '8px' }}>The Brahmos Educational Trust</span>
+                            <a href="tel:+919840731240">+91 98407 31240</a>
+                            <a href="mailto:thebrahmoslearningcentre@gmail.com">thebrahmoslearningcentre@gmail.com</a>
                             <a href="#enroll">Book Assessment</a>
                             <h4 style={{ marginTop: '24px' }}>Developed By</h4>
                             <span style={{ color: 'var(--text-muted)', fontSize: '0.9rem', display: 'block' }}>Vigneshwaran C</span>
