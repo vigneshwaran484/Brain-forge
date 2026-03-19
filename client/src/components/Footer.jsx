@@ -49,6 +49,7 @@ export default function Footer() {
                             <a href="#enroll">Book Assessment</a>
                             <h4 style={{ marginTop: '24px' }}>Developed By</h4>
                             <span style={{ color: 'var(--text-muted)', fontSize: '0.9rem', display: 'block' }}>Vigneshwaran C</span>
+                            <span style={{ color: 'var(--text-muted)', fontSize: '0.9rem', display: 'block' }}>Allan Samraj</span>
                             <span style={{ color: 'var(--text-muted)', fontSize: '0.9rem', display: 'block' }}>Joel Xavier P</span>
                         </div>
                     </div>
